@@ -1,0 +1,173 @@
+/* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the header */
+header {
+    display: flex;
+    flex-direction: column;
+    /* Stacking nav elements vertically */
+    align-items: center;
+    background-color: #f8f8f8;
+    /* Background color for header */
+    padding: 10px;
+    /* Padding for header */
+    border-bottom: 1px solid #ddd;
+    /* Optional border for header */
+}
+
+/* Styling the first nav inside the header */
+header nav:first-of-type {
+    margin-bottom: 10px;
+    /* Space between the two nav elements */
+}
+
+.heading {
+    font-size: 24px;
+    /* Font size for the heading */
+    font-weight: bold;
+    /* Bold text for the heading */
+    color: #333;
+    /* Text color for the heading */
+}
+
+/* Styling the second nav inside the header */
+header nav:last-of-type {
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    color: #007bff;
+    /* Text color for "View More" */
+    font-size: 16px;
+    /* Font size for "View More" */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+header nav:last-of-type:hover {
+    text-decoration: underline;
+    /* Underline text on hover */
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line if necessary */
+    justify-content: space-around;
+    /* Evenly space the cards */
+    gap: 20px;
+    /* Space between the cards */
+    padding: 20px;
+    /* Padding around the card deck */
+    background-color: #f8f8f8;
+    /* Background color for card deck */
+}
+
+/* Styling individual cards */
+.card {
+    background-color: #fff;
+    /* Background color for cards */
+    border: 1px solid #ddd;
+    /* Border for cards */
+    border-radius: 8px;
+    /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for cards */
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
+    width: 100%;
+    /* Full width in mobile view */
+    max-width: 300px;
+    /* Maximum width for each card */
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+}
+
+.card img {
+    width: 100%;
+    /* Ensure image covers full width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.card-body {
+    padding: 15px;
+    /* Padding inside the card body */
+    flex-grow: 1;
+    /* Allow body to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+}
+
+.card-title {
+    font-size: 20px;
+    /* Font size for card title */
+    font-weight: bold;
+    /* Bold text for card title */
+    color: #333;
+    /* Text color for card title */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+.card-text {
+    font-size: 14px;
+    /* Font size for card text */
+    color: #666;
+    /* Text color for card text */
+    margin-bottom: 10px;
+    /* Space below the text */
+    flex-grow: 1;
+    /* Allow text to grow and fill available space */
+}
+
+.card-price {
+    font-size: 18px;
+    /* Font size for card price */
+    font-weight: bold;
+    /* Bold text for card price */
+    color: #007bff;
+    /* Text color for card price */
+    text-align: left;
+    /* Align price to the right */
+    padding-left: 5px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+.card-buy {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card-add {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-buy:hover {
+    background-color: #3e7bc2;
+}
+
+.card-add:hover {
+    background-color: #3e7bc2;
+}
