@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#box {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+#bar {
+    position: absolute;
+    background-color: black;
+}
